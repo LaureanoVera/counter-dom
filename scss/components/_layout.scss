@@ -1,0 +1,11 @@
+.counter {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__value {
+    font-size: 5rem;
+  }
+}

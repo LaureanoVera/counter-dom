@@ -1,0 +1,20 @@
+{
+  "name": "counter-dom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:scss": "sass --watch scss:assets/style"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaureanoVera/counter-dom.git"
+  },
+  "keywords": ["html", "scss", "js", "dom"],
+  "author": "LaureanoVera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaureanoVera/counter-dom/issues"
+  },
+  "homepage": "https://github.com/LaureanoVera/counter-dom#readme"
+}
