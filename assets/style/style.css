@@ -12,7 +12,13 @@
   align-items: center;
 }
 .counter__value {
-  font-size: 5rem;
+  font-size: 12rem;
+}
+
+@media screen and (max-width: 768px) {
+  .counter__value {
+    font-size: 8rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
