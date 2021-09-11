@@ -1,0 +1,35 @@
+{
+  "short_name": "CounterApp",
+  "name": "Counter App",
+  "icons": [
+    {
+      "src": "./assets/images/logo32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "./assets/images/logo48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "./assets/images/logo72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "./assets/images/logo96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "./assets/images/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#343a40",
+  "display": "standalone",
+  "theme_color": "#14aafa"
+}

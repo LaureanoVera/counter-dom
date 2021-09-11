@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:scss": "sass --watch scss:assets/style"
+    "compile:scss": "sass --watch scss:assets/style",
+    "compile:ts": "tsc --watch"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,6 @@
   "bugs": {
     "url": "https://github.com/LaureanoVera/counter-dom/issues"
   },
-  "homepage": "https://github.com/LaureanoVera/counter-dom#readme"
+  "homepage": "https://github.com/LaureanoVera/counter-dom#readme",
+  "type": "module"
 }

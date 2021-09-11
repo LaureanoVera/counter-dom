@@ -1,37 +1,35 @@
-// FORM
-const amount = document.getElementById("amount");
+"use strict";
+// < ===== FORM ===== >
+const amountInput = document.getElementById("amount");
 const form = document.getElementById("amount-form");
-
-let amountValue = 0;
-const handleSubmit = () => {
-  amountValue = Number(amount.value);
-  amount.value = 0;
+let amountValue = 0; // <= Store Amount
+const handleSubmit = (evt) => {
+    evt.preventDefault(); // Prevent Default Submit Form
+    amountValue = Number(amountInput.value);
+    amountInput.value = String(0); // Reset Input Value
 };
-
-form.addEventListener("submit", handleSubmit);
-
-// ===== ===== COUNTER ===== =====
-let countValue = 0; // initial value (counter)
+// < ===== /FORM ===== >
+// < ===== COUNTER ===== >
+let counterValue = 0; // <= Store Counter
 const counter = document.getElementById("counter-value"); // select container of value
-counter.innerText = `${countValue}`; // render countValue
-
-const handleCounter = (value) => {
-  // handle counter values
-  value != 0 ? (countValue += value) : (countValue = 0);
-  counter.innerText = `${countValue}`;
-  countValue >= amountValue 
-    ? counter.style.color = 'red'
-    : counter.style.color = ''
+const handleCounter = (num) => {
+    num != 0 ? (counterValue += num) : (counterValue = 0);
+    counter.innerText = `${counterValue}`; // Render countValue
+    counterValue >= amountValue
+        ? (counter.style.color = "red")
+        : (counter.style.color = "");
 };
-
-// increase counter in one
+// Get Buttons from the DOM
 const increase = document.getElementById("increase");
-increase.addEventListener("click", () => handleCounter(1));
-
-// reset counter
 const reset = document.getElementById("reset");
-reset.addEventListener("click", () => handleCounter(0));
-
-// decrease counter in one
 const decrease = document.getElementById("decrease");
-decrease.addEventListener("click", () => handleCounter(-1));
+// < ===== /COUNTER ===== >
+// Controler
+const main = () => {
+    counter.innerText = `0`; // Render countValue
+    form === null || form === void 0 ? void 0 : form.addEventListener("submit", handleSubmit);
+    increase.addEventListener('click', () => handleCounter(1));
+    reset.addEventListener('click', () => handleCounter(0));
+    decrease.addEventListener('click', () => handleCounter(-1));
+};
+main();
