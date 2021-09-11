@@ -11,12 +11,23 @@
     "type": "git",
     "url": "git+https://github.com/LaureanoVera/counter-dom.git"
   },
-  "keywords": ["html", "scss", "js", "dom"],
+  "keywords": [
+    "html",
+    "scss",
+    "js",
+    "dom"
+  ],
   "author": "LaureanoVera",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/LaureanoVera/counter-dom/issues"
   },
   "homepage": "https://github.com/LaureanoVera/counter-dom#readme",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "sass": "^1.39.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.1"
+  }
 }

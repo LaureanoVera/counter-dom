@@ -1,0 +1,14 @@
+// <MY THEMES COLORS>
+$dark: #022742;
+$blue: #03355a;
+$cyan: #0dcaf0;
+// </MY THEMES COLORS>
+
+// <CUSTOM COLORS>
+  // change bootstrap colors
+$primary: $blue;
+$info: $cyan;
+// </CUSTOM COLORS>
+
+// IMPORT BOOTSTRAP 5
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

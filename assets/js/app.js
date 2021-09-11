@@ -7,17 +7,30 @@ const handleSubmit = (evt) => {
     evt.preventDefault(); // Prevent Default Submit Form
     amountValue = Number(amountInput.value);
     amountInput.value = String(0); // Reset Input Value
+    handleCounter(0);
 };
 // < ===== /FORM ===== >
 // < ===== COUNTER ===== >
 let counterValue = 0; // <= Store Counter
 const counter = document.getElementById("counter-value"); // select container of value
+const controller = document.getElementById('controller');
+controller.innerText = `0`;
+const handleController = () => {
+    const res = amountValue - counterValue;
+    res > 0
+        ? controller.innerText = `${res}`
+        : controller.innerText = `0`;
+};
 const handleCounter = (num) => {
     num != 0 ? (counterValue += num) : (counterValue = 0);
     counter.innerText = `${counterValue}`; // Render countValue
-    counterValue >= amountValue
-        ? (counter.style.color = "red")
-        : (counter.style.color = "");
+    if ((counterValue >= amountValue) && (amountValue !== 0)) {
+        counter.classList.replace('text-dark', "text-info");
+    }
+    else {
+        (counter.classList.replace("text-info", 'text-dark'));
+    }
+    handleController();
 };
 // Get Buttons from the DOM
 const increase = document.getElementById("increase");

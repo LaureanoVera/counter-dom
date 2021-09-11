@@ -21,26 +21,71 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
       rel="stylesheet"
     />
+    <!-- PROGRESSIVE WEB APP -->
+    <meta name="theme-color" content="#343a40" />
+    <meta name="MobileOptized" content="width" />
+    <meta name="HandleFriendly" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link
+      rel="shorcut icon"
+      type="image/png"
+      href="./assets/images/logo48.png"
+    />
+    <meta name="apple-touch-icon" href="./assets/images/logo48.png" />
+    <meta name="apple-touch-startup-image" href="./assets/images/logo48.png" />
+    <!-- MANIFEST -->
+    <link rel="manifest" href="./manifest.json" />
+    <!-- LOGO -->
+    <link rel="icon" href="./assets/images/logo48.png" />
     <!-- STYLES -->
     <link rel="stylesheet" href="./assets/style/style.css" />
-    <!-- MANIFEST -->
-    <link rel="manifest" href="./manifest.json">
-    <!-- LOGO -->
-    <link rel="icon" href="./assets/images/logo48.png">
   </head>
   <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-fluid d-flex">
-        <a class="navbar-brand" href="#">Counter</a>
-        <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#"><img src="./assets/images/logo32.png" class="mx-1 rounded-3" alt="Counter Logo">Counter</a>
+        <button
+          class="navbar-toggler my-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Author
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" target="blank" href="https://www.linkedin.com/in/laureano-vera-320086204/">Linkedind</a></li>
+                <li><a class="dropdown-item" target="blank" href="https://github.com/LaureanoVera">Github</a></li>
+                <li><a class="dropdown-item" target="blank" href="https://github.com/LaureanoVera/counter-dom">Project Code</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-primary" target="blank" href="https://portfolio-lv.netlify.app/">Portfolio</a></li>
+              </ul>
+            </li>
+          </ul>
           <form id="amount-form" class="d-flex">
-            <input id="amount" class="form-control me-2 py-1" type="number" placeholder="Amount" aria-label="Search">
-            <button id="send" class="btn btn-outline-light py-1" type="submit">Send</button>
+            <input
+              id="amount"
+              class="form-control me-2 py-1"
+              type="number"
+              placeholder="Amount"
+              aria-label="Search"
+            />
+            <button id="send" class="btn btn-outline-light py-1" type="submit">
+              Send
+            </button>
           </form>
         </div>
       </div>
@@ -48,19 +93,31 @@
     <!-- /NAVBAR -->
     <!-- COUNTER -->
     <div class="counter justify-content-center align-content-center">
-      <div id="counter-value" class="counter__value"></div>
+      <div id="counter-value" class="counter__value text-dark"></div>
 
       <div class="d-flex flex-wrap justify-content-center">
-        <button id="increase" class="my-1 mx-1 btn btn-outline-dark increase">Increase</button>
-        <button id="reset" class="my-1 mx-1 btn btn-outline-dark reset">Reset</button>
-        <button id="decrease" class="my-1 mx-1 btn btn-outline-dark decrease">Decrease</button>
+        <button id="increase" class="my-1 mx-1 btn btn-outline-dark increase">
+          Increase
+        </button>
+        <button id="reset" class="my-1 mx-1 btn btn-outline-dark reset">
+          Reset
+          <span id="controller" class="badge bg-primary"></span>
+        </button>
+        <button id="decrease" class="my-1 mx-1 btn btn-outline-dark decrease">
+          Decrease
+        </button>
       </div>
     </div>
     <!-- /COUNTER -->
 
     <!-- SCRIPTS -->
     <script src="./assets/js/app.js"></script>
+    <script src="./pwa.js"></script>
     <!-- BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

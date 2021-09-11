@@ -1,6 +1,7 @@
 {
-  "short_name": "CounterApp",
-  "name": "Counter App",
+  "name": "Counter PWA",
+  "short_name": "CounterPWA",
+  "description":"Counter PWA with typescript, sass, bootstrap. Author: LaureanoVera",
   "icons": [
     {
       "src": "./assets/images/logo32.png",
@@ -29,7 +30,10 @@
     }
   ],
   "start_url": "/index.html",
-  "background_color": "#343a40",
+  "background_color": "#14aafa",
   "display": "standalone",
-  "theme_color": "#14aafa"
+  "theme_color": "#343a40",
+  "orientation":"portrait",
+  "scope":"./",
+  "lang":"en"
 }
