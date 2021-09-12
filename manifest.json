@@ -29,11 +29,11 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": "/index.html",
+  "start_url": "index.html",
   "background_color": "#14aafa",
   "display": "standalone",
   "theme_color": "#343a40",
   "orientation":"portrait",
-  "scope":"./",
+  "scope":"/",
   "lang":"en"
 }
