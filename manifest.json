@@ -2,6 +2,8 @@
   "name": "Counter PWA",
   "short_name": "CounterPWA",
   "description":"Counter PWA with typescript, sass, bootstrap. Author: LaureanoVera",
+  "start_url": "/?source=pwa",
+  "scope":"/",
   "icons": [
     {
       "src": "./assets/images/logo32.png",
@@ -29,11 +31,9 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": "index.html",
   "background_color": "#14aafa",
   "display": "standalone",
   "theme_color": "#343a40",
   "orientation":"portrait",
-  "scope":"/",
   "lang":"en"
 }
